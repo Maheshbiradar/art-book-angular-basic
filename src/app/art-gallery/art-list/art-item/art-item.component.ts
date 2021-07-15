@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Art } from '../../models/art.model';
 
 @Component({
   selector: 'app-art-item',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./art-item.component.css']
 })
 export class ArtItemComponent implements OnInit {
+  @Input() art: Art;
+  @Output() selectedArt = new EventEmitter<void>();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSelectArt() {
+    this.selectedArt.emit();
   }
 
 }

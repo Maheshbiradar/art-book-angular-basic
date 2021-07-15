@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ArtMeterial } from '../art-gallery/models/art-material-model';
 
 @Component({
@@ -14,6 +14,10 @@ export class ArtShoppingCartComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onaddCartItemAdded(artMaterial: ArtMeterial) {
+    this.artMaterials.push(artMaterial);
   }
 
 }

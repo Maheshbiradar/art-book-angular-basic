@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Event } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'Mahesh';
+  current: String = 'art';
+
+  onNavigate(event: String) {
+    this.current = event;
+  }
 }
