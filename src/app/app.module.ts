@@ -9,6 +9,7 @@ import { ArtDetailComponent } from './art-gallery/art-detail/art-detail.componen
 import { ArtItemComponent } from './art-gallery/art-list/art-item/art-item.component';
 import { ArtShoppingCartComponent } from './art-shopping-cart/art-shopping-cart.component';
 import { ShoppingCartEditComponent } from './art-shopping-cart/shopping-cart-edit/shopping-cart-edit.component';
+import { appDropdownDirective } from './directives/dropdown-directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ShoppingCartEditComponent } from './art-shopping-cart/shopping-cart-edi
     ArtDetailComponent,
     ArtItemComponent,
     ArtShoppingCartComponent,
-    ShoppingCartEditComponent
+    ShoppingCartEditComponent,
+    appDropdownDirective
   ],
   imports: [
     BrowserModule
