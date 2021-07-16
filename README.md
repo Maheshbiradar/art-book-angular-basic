@@ -1,10 +1,10 @@
 # Art Book Angular Basic App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1 and mainly demonstartes the below-
-  ###Directives
-  ###Components
-  ###Data Binding
-  ###View Encapsulation
+  ### Directives
+  ### Components
+  ### Data Binding
+  ### View Encapsulation
 
 ## Development server
 
